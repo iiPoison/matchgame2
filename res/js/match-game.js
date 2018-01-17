@@ -13,6 +13,8 @@ $(document).ready(function() {
   $('.opened').text('Opened: 0 cards');
   opened = 0;
   failedAttampts = 0;
+  $('.failed-attempts').text('Failed attempts: 0');
+  $('.hiden').css('display', 'none');
 
 
   $('.reset').click(function() {
@@ -23,6 +25,8 @@ $(document).ready(function() {
     opened = 0;
     failedAttampts = 0;
     $('.failed-attempts').text('Failed attempts: 0');
+    $('.hiden').css('display', 'none');
+
 
   });
 
@@ -119,6 +123,9 @@ MatchGame.flipCard = function($card, $game) {
       flippedCards[1].css(matchCss);
       opened++;
       opened++;
+      if (opened == 16) {
+        $('.hiden').css('display', 'block');
+      }
       $('.opened').text('Opened: ' + opened + ' cards');
 
     } else {
