@@ -1,21 +1,28 @@
 var MatchGame = {};
+var opened = 0;
+var failedAttampts = 0;
 
 /*
   Sets up a new game after HTML document has loaded.
   Renders a 4x4 board of cards.
 */
 $(document).ready(function() {
-  //var unOpenedCards = 16;
   var $game = $('#game');
   var values = MatchGame.generateCardValues();
   MatchGame.renderCards(values, $game);
+  $('.opened').text('Opened: 0 cards');
+  opened = 0;
+  failedAttampts = 0;
 
 
   $('.reset').click(function() {
-    //var unOpenedCards = 16;
     var $game = $('#game');
     var values = MatchGame.generateCardValues();
     MatchGame.renderCards(values, $game);
+    $('.opened').text('Opened: 0 cards');
+    opened = 0;
+    failedAttampts = 0;
+    $('.failed-attempts').text('Failed attempts: 0');
 
   });
 
@@ -110,10 +117,15 @@ MatchGame.flipCard = function($card, $game) {
 
       flippedCards[0].css(matchCss);
       flippedCards[1].css(matchCss);
+      opened++;
+      opened++;
+      $('.opened').text('Opened: ' + opened + ' cards');
 
     } else {
       var card1 = flippedCards[0];
       var card2 = flippedCards[1];
+      failedAttampts++;
+      $('.failed-attempts').text('Failed attempts: ' + failedAttampts);
       window.setTimeout(function() {
         card1.css('background-color', 'rgb(32, 64, 86)')
             .text('')
