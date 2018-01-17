@@ -5,9 +5,21 @@ var MatchGame = {};
   Renders a 4x4 board of cards.
 */
 $(document).ready(function() {
+  //var unOpenedCards = 16;
   var $game = $('#game');
   var values = MatchGame.generateCardValues();
   MatchGame.renderCards(values, $game);
+
+
+  $('.reset').click(function() {
+    //var unOpenedCards = 16;
+    var $game = $('#game');
+    var values = MatchGame.generateCardValues();
+    MatchGame.renderCards(values, $game);
+
+  });
+
+
 });
 /*
   Generates and returns an array of matching card values.
@@ -78,6 +90,7 @@ MatchGame.renderCards = function(cardValues, $game) {
 
 MatchGame.flipCard = function($card, $game) {
   if ($card.data('isFlipped')) {
+
     return;
   }
 
@@ -94,8 +107,10 @@ MatchGame.flipCard = function($card, $game) {
         backgroundColor: 'rgb(153, 153, 153)',
         color: 'rgb(204, 204, 204)'
       };
+
       flippedCards[0].css(matchCss);
       flippedCards[1].css(matchCss);
+
     } else {
       var card1 = flippedCards[0];
       var card2 = flippedCards[1];

@@ -44,22 +44,18 @@ strong {
   background-color: rgb(32, 64, 86);
   font-size: 7rem;
   font-weight: bold;
-  /*color: white;*/ /* удалить */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
 }
-
-/*.quad {
-  height: 100px;
-  /*width: 100px !important;
-  /*margin: 1rem;
-  /*border: 1px solid black;
-  border-radius: 5px;
-} */
 
 .main-width {
   width: 75rem;
+}
+
+.control-block {
+  border: 1px solid rgb(32, 64, 86);
+  border-radius: 8px;
+  padding: 10px;
 }
