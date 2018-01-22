@@ -183,6 +183,7 @@ strong {
 .subselect-level li:hover {
   font-size: 1.6rem;
   color: #9eab60;
+  cursor: pointer;
 }
 
 .subselect-level li:active {
