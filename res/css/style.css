@@ -8,6 +8,60 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+@font-face {
+  font-family:"Alex Murphy Solid Regular";
+  src:url("../fonts/alex_murphy_solid.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://fonts.gstatic.com/s/titilliumweb/v6/anMUvcNT0H1YN4FII8wpr4-67659ICLY8bMrYhtePPA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'), url(https://fonts.gstatic.com/s/titilliumweb/v6/7XUFZ5tgS-tD6QamInJTcZSnX671uNZIV63UdXh3Mg0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'), url(https://fonts.gstatic.com/s/titilliumweb/v6/anMUvcNT0H1YN4FII8wpr46gJz9aNFrmnwBdd69aqzY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'), url(https://fonts.gstatic.com/s/titilliumweb/v6/anMUvcNT0H1YN4FII8wprxP6Eu1_xfSBSoi9uie1FdE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Michroma'), url(https://fonts.gstatic.com/s/michroma/v8/-4P7knfa8IRSEOi-sKrsivesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+
+
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
@@ -69,4 +123,69 @@ strong {
   color:rgb(32, 64, 86);
   text-align: center;
   display: none;
+}
+
+.slide1 {
+  background-image: url("../img/robocop_main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
+
+.robocop-header {
+  color: #C7CEA2;
+  font-family:"Alex Murphy Solid Regular";
+  line-height: 0.7;
+  font-size: 13rem;
+  text-align: right;
+  padding: 0;
+  margin: 0 auto;
+
+}
+
+.robocop-subheader {
+  color: #8A966E;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: right;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.select-level {
+  color: #C7CEA2;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  font-size: 2.2rem;
+  font-family: 'Michroma';
+  margin-right: 3rem;
+  margin-top: 10rem;
+}
+
+.subselect-level {
+  color: #C7CEA2;
+  text-align: right;
+  margin-top: 2rem;
+  margin-right: 3rem;
+
+}
+
+.subselect-level li {
+  margin: 1.2rem 0;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
+.subselect-level li:hover {
+  font-size: 1.6rem;
+  color: #9eab60;
+}
+
+.subselect-level li:active {
+  font-size: 1.6rem;
+  color: #800000;
 }
