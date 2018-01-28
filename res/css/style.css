@@ -149,7 +149,36 @@ strong {
   background-repeat: no-repeat;
   background-size: cover;
   height: 65rem;
+  display: none;
 }
+
+.slide3 {
+  display: none;
+}
+
+#button-slide2 {
+  border: 1px solid forestgreen;
+  border-radius: 5px;
+  background-color: black;
+  position: absolute;
+  height: 4rem;
+  width: 12rem;
+  margin-left: 1rem;
+  text-align: center;
+  color: forestgreen;
+}
+
+
+#button-slide2:hover {
+  border: 1px solid orangered;
+  color: orangered;
+}
+
+#button-slide2:active {
+  border: 1px solid lightsalmon;
+  color: lightsalmon;
+}
+
 
 .floating-block {
   background-color: black;

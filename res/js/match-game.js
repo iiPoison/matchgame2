@@ -1,6 +1,7 @@
 var MatchGame = {};
 var opened = 0;
 var failedAttampts = 0;
+var testLevel = ;
 
 /*
   Sets up a new game after HTML document has loaded.
@@ -26,10 +27,41 @@ $(document).ready(function() {
     failedAttampts = 0;
     $('.failed-attempts').text('Failed attempts: 0');
     $('.hiden').css('display', 'none');
-
-
   });
 
+
+    $('#easy').click(function() {
+      $('#test-level').text ('EASY');
+      $('#field-size').text ('4x4');
+      $('.slide2').css ('display', 'block');
+      $('.slide1').css ('display', 'none');
+      testLevel = 16;
+
+    });
+
+    $('#hard').click(function() {
+      $('#test-level').text ('HARD');
+      $('#field-size').text ('5x5');
+      $('.slide2').css ('display', 'block');
+      $('.slide1').css ('display', 'none');
+      testLevel = 25;
+
+    });
+
+    $('#unreal').click(function() {
+      $('#test-level').text ('UNREAL');
+      $('#field-size').text ('6x6');
+      $('.slide2').css ('display', 'block');
+      $('.slide1').css ('display', 'none');
+      testLevel = 36;
+
+    });
+
+    $('#button-slide2').click(function() {
+      $('.slide2').css ('display', 'none');
+      $('.slide3').css ('display', 'block');
+
+    });
 
 });
 /*
