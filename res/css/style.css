@@ -60,6 +60,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
 }
 
+/* latin */
+@font-face {
+  font-family: 'Gruppo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gruppo'), url(https://fonts.gstatic.com/s/gruppo/v8/EoL765IZSvUoJyAsw4h7ow.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
 
 
 body {
@@ -130,9 +139,46 @@ strong {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 65rem;
 
 }
+
+.slide2 {
+  background-image: url("../img/robo_2nd_slide.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65rem;
+}
+
+.floating-block {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  position: absolute;
+  width: 30rem;
+  height: 35rem;
+  top: 5rem;
+  left: 45rem;
+  font-family: 'Gruppo', cursive;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.floating-block ul {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.color-text {
+  color: magenta;
+}
+
+.color-text2 {
+  color: dodgerblue;
+}
+
+
 
 .robocop-header {
   color: #C7CEA2;
